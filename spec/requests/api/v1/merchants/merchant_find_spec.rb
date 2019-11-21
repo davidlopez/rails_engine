@@ -37,7 +37,7 @@ describe "Merchant JSON" do
 
   it 'Finds single merchants based on options' do
     merchant = create(:merchant)
-    
+
     get "/api/v1/merchants/find?id=#{merchant.id}"
 
     expect(response).to be_successful
@@ -95,5 +95,4 @@ describe "Merchant JSON" do
     json_merchant = JSON.parse(response.body)
     expect(json_merchant['data']).to be_falsey
   end
-
 end
