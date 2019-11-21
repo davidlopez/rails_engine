@@ -1,7 +1,9 @@
 class ApplicationController < ActionController::API
 
   def which_resource
-    self.class.to_s.scan(/(?<=V1::|s::)\w*(?=sController|s::)/)[0].constantize
+    resource = self.class.to_s.scan(/(?<=::|V1::)\w*(?=sController|s::)/).uniq
+    return resource[-1].constantize if resource.length > 1
+    resource[0].constantize
   end
 
   def which_serializer
