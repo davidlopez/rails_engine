@@ -1,1 +1,3 @@
-![db_schema](./schema.png=400x400)
+<p align="center">
+  <img src="schema.png" width="256">
+</p>
