@@ -1,1 +1,1 @@
-![db_schema](./schema.png)
+![db_schema](./schema.png | width=250)
