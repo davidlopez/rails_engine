@@ -1,6 +1,1 @@
-
-
-
-
-
-<img src="https://github.com/Not-Zorro/rails_engine/blob/master/schema.png" width="400">
+![db_schema](./schema.png=400x400)
