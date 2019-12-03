@@ -11,8 +11,7 @@ class Customer < ApplicationRecord
     group(:id).
     where(invoices: {merchant_id: id}).
     merge(Transaction.successful).
-    order(people: :desc).
-    limit(1)[0]
+    order(people: :desc).first
   end
 
   def fav_merch
